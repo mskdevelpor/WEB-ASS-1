@@ -1,0 +1,462 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarn & Petals | Home</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        beige: '#D8C3A5',
+                        pink: '#F3D6D8',
+                        maroon: '#6B2635',
+                        cream: '#FFF9F3',
+                        brown: '#8B6F5A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="bg-maroon text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+
+        <a href="index.html" class="text-2xl font-bold">
+            🧶 Yarn & Petals
+        </a>
+
+        <div class="flex flex-wrap gap-5 items-center mt-3 md:mt-0">
+            <a href="index.html" class="hover:text-pink">Home</a>
+            <a href="src/pages/about.html" class="hover:text-pink">About</a>
+            <a href="src/pages/contact.html" class="hover:text-pink">Contact</a>
+
+            <a href="src/pages/signup.html"
+               class="bg-pink text-maroon px-4 py-2 rounded-full hover:bg-beige">
+                Sign Up
+            </a>
+
+            <a href="src/pages/signin.html"
+               class="border border-pink px-4 py-2 rounded-full hover:bg-pink hover:text-maroon">
+                Sign In
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-pink">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <p class="text-maroon font-semibold tracking-widest">
+                HANDMADE WITH LOVE
+            </p>
+
+            <h1 class="text-5xl font-bold text-maroon mt-4 leading-tight">
+                Where Yarn Blooms Into
+                <span class="text-brown">Beautiful Petals</span>
+            </h1>
+
+            <p class="mt-5 text-gray-700 text-lg">
+                Discover beautiful handmade crochet flowers,
+                cozy yarn creations and thoughtful gifts.
+            </p>
+
+            <div class="mt-7 flex gap-4">
+                <a href="src/pages/signup.html"
+                   class="bg-maroon text-white px-6 py-3 rounded-full">
+                    Explore Collection
+                </a>
+
+                <a href="src/pages/about.html"
+                   class="border-2 border-maroon text-maroon px-6 py-3 rounded-full">
+                    Our Story
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <img
+                src="https://i.pinimg.com/originals/38/d4/ac/38d4ac531c6c31aa0acfb02ffe554369.jpg"
+                class="w-full h-96 object-cover rounded-3xl shadow-lg"
+                alt="Handmade yarn">
+        </div>
+
+    </div>
+</section>
+
+<!-- COMPONENT 1: ANNOUNCEMENT -->
+<section class="max-w-6xl mx-auto px-6 mt-8">
+    <div class="bg-beige text-maroon p-4 rounded-xl text-center font-semibold">
+        🌸 Handmade with care — every piece is made with love.
+    </div>
+</section>
+
+<!-- COMPONENT 2: CATEGORIES -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+
+    <h2 class="text-3xl font-bold text-maroon text-center">
+        Our Collections
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-6 mt-8">
+
+        <div class="bg-white p-7 rounded-2xl shadow text-center">
+            <div class="text-5xl">🌷</div>
+            <h3 class="font-bold text-xl text-maroon mt-4">
+                Crochet Flowers
+            </h3>
+            <p class="text-gray-500 mt-2">
+                Forever blooming handmade flowers.
+            </p>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl shadow text-center">
+            <div class="text-5xl">🧶</div>
+            <h3 class="font-bold text-xl text-maroon mt-4">
+                Yarn Creations
+            </h3>
+            <p class="text-gray-500 mt-2">
+                Creative pieces made with soft yarn.
+            </p>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl shadow text-center">
+            <div class="text-5xl">🎀</div>
+            <h3 class="font-bold text-xl text-maroon mt-4">
+                Accessories
+            </h3>
+            <p class="text-gray-500 mt-2">
+                Cute handmade accessories.
+            </p>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl shadow text-center">
+            <div class="text-5xl">🎁</div>
+            <h3 class="font-bold text-xl text-maroon mt-4">
+                Gift Collection
+            </h3>
+            <p class="text-gray-500 mt-2">
+                Special gifts for special people.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMPONENT 3: PRODUCTS -->
+<section class="bg-pink py-14">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-maroon text-center">
+            Best Sellers
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-8">
+
+            <div class="bg-white rounded-2xl shadow overflow-hidden">
+                <img
+                    src="https://i.pinimg.com/1200x/31/5e/68/315e68a04298385c99f5438a1a0558ce.jpg"
+                    class="w-full h-56 object-cover"
+                    alt="Crochet flower">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-maroon">
+                        Crochet Flower Bouquet
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Handmade flowers that never fade.
+                    </p>
+
+                    <p class="text-maroon font-bold text-xl mt-4">
+                        $25
+                    </p>
+
+                    <button class="bg-maroon text-white px-5 py-2 rounded-full mt-4">
+                        View Product
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow overflow-hidden">
+                <img
+                    src="https://i.pinimg.com/736x/dd/46/90/dd4690e437dc27e9e16efa64e4f8b60b.jpg"
+                    class="w-full h-56 object-cover"
+                    alt="Yarn accessory">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-maroon">
+                        Handmade Accessories
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Soft and elegant yarn accessories.
+                    </p>
+
+                    <p class="text-maroon font-bold text-xl mt-4">
+                        $18
+                    </p>
+
+                    <button class="bg-maroon text-white px-5 py-2 rounded-full mt-4">
+                        View Product
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow overflow-hidden">
+                <img
+                    src="https://i.pinimg.com/1200x/b7/a9/71/b7a971e4170275f991eefa5747ca27d6.jpg"
+                    class="w-full h-56 object-cover"
+                    alt="Cozy handmade">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-maroon">
+                        Cozy Yarn Set
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Beautiful handmade pieces for your home.
+                    </p>
+
+                    <p class="text-maroon font-bold text-xl mt-4">
+                        $30
+                    </p>
+
+                    <button class="bg-maroon text-white px-5 py-2 rounded-full mt-4">
+                        View Product
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- COMPONENT 4: STATS -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+
+        <div class="bg-beige rounded-2xl p-8">
+            <h2 class="text-4xl font-bold text-maroon">500+</h2>
+            <p class="mt-2">Happy Customers</p>
+        </div>
+
+        <div class="bg-beige rounded-2xl p-8">
+            <h2 class="text-4xl font-bold text-maroon">100+</h2>
+            <p class="mt-2">Handmade Products</p>
+        </div>
+
+        <div class="bg-beige rounded-2xl p-8">
+            <h2 class="text-4xl font-bold text-maroon">50+</h2>
+            <p class="mt-2">Unique Designs</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMPONENT 5: WHY US -->
+<section class="bg-cream py-12">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-maroon text-center">
+            Why Yarn & Petals?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+
+            <div class="border border-beige rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-maroon">
+                    Handmade
+                </h3>
+                <p class="mt-2 text-gray-600">
+                    Every product is carefully handmade.
+                </p>
+            </div>
+
+            <div class="border border-beige rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-maroon">
+                    Unique
+                </h3>
+                <p class="mt-2 text-gray-600">
+                    Every design has its own special character.
+                </p>
+            </div>
+
+            <div class="border border-beige rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-maroon">
+                    Made With Love
+                </h3>
+                <p class="mt-2 text-gray-600">
+                    Created with patience, care and creativity.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- COMPONENT 6: TESTIMONIAL -->
+<section class="bg-pink py-14 text-center">
+
+    <h2 class="text-3xl font-bold text-maroon">
+        What Our Customers Say
+    </h2>
+
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow p-8 mt-7">
+
+        <div class="text-4xl">🌸</div>
+
+        <p class="italic text-gray-600 mt-4 text-lg">
+            "The crochet flowers are so beautiful and carefully made.
+            They made the perfect gift!"
+        </p>
+
+        <p class="font-bold text-maroon mt-5">
+            — Happy Customer
+        </p>
+
+    </div>
+</section>
+
+<!-- COMPONENT 7: PROGRESS -->
+<section class="max-w-5xl mx-auto px-6 py-12">
+
+    <h2 class="text-3xl font-bold text-maroon mb-6">
+        Our Craft
+    </h2>
+
+    <p class="mb-2">Creativity</p>
+
+    <div class="w-full bg-beige rounded-full h-4">
+        <div class="bg-maroon h-4 rounded-full w-11/12"></div>
+    </div>
+
+    <p class="mt-5 mb-2">Handmade Quality</p>
+
+    <div class="w-full bg-beige rounded-full h-4">
+        <div class="bg-maroon h-4 rounded-full w-full"></div>
+    </div>
+
+</section>
+
+<!-- COMPONENT 8: FAQ -->
+<section class="max-w-4xl mx-auto px-6 py-12">
+
+    <h2 class="text-3xl font-bold text-maroon mb-6">
+        Frequently Asked Questions
+    </h2>
+
+    <details class="bg-white border border-beige rounded-xl p-5 mb-3">
+        <summary class="font-bold text-maroon cursor-pointer">
+            Are your products handmade?
+        </summary>
+        <p class="mt-3 text-gray-600">
+            Yes, our products are carefully handmade.
+        </p>
+    </details>
+
+    <details class="bg-white border border-beige rounded-xl p-5">
+        <summary class="font-bold text-maroon cursor-pointer">
+            Can I order a gift?
+        </summary>
+        <p class="mt-3 text-gray-600">
+            Yes, our collection is perfect for gifting.
+        </p>
+    </details>
+
+</section>
+
+<!-- COMPONENT 9: CTA -->
+<section class="bg-maroon text-white text-center py-14">
+
+    <h2 class="text-3xl font-bold">
+        Find Something Handmade & Special
+    </h2>
+
+    <p class="mt-3">
+        Explore our beautiful yarn collection.
+    </p>
+
+    <a href="src/pages/signup.html"
+       class="inline-block mt-6 bg-pink text-maroon px-7 py-3 rounded-full font-bold">
+        Join Us
+    </a>
+
+</section>
+
+<!-- COMPONENT 10: NEWSLETTER -->
+<section class="max-w-4xl mx-auto px-6 py-12 text-center">
+
+    <h2 class="text-3xl font-bold text-maroon">
+        Stay in the Loop
+    </h2>
+
+    <p class="text-gray-600 mt-2">
+        Get updates about new handmade collections.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-3 mt-6">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            class="flex-1 border border-beige rounded-full px-5 py-3">
+
+        <button class="bg-maroon text-white px-7 py-3 rounded-full">
+            Subscribe
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-maroon text-white">
+
+    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+
+        <div>
+            <h2 class="text-2xl font-bold">🧶 Yarn & Petals</h2>
+            <p class="mt-3 text-pink">
+                Handmade with love, inspired by nature.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-lg">Quick Links</h3>
+
+            <div class="flex flex-col gap-2 mt-3">
+                <a href="index.html" class="hover:text-pink">Home</a>
+                <a href="src/pages/about.html" class="hover:text-pink">About</a>
+                <a href="src/pages/contact.html" class="hover:text-pink">Contact</a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-lg">Follow Us</h3>
+            <p class="mt-3">Instagram • Facebook • Pinterest</p>
+        </div>
+
+    </div>
+
+    <div class="border-t border-pink text-center py-4">
+        © 2026 Yarn & Petals. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>

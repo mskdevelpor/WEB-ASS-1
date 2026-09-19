@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarn & Petals | Sign Up</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFF9F3]">
+
+<!-- NAVBAR -->
+<nav class="bg-[#6B2635] text-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between">
+
+        <a href="../../index.html" class="text-2xl font-bold">
+            🧶 Yarn & Petals
+        </a>
+
+        <div class="flex flex-wrap gap-5 mt-3 md:mt-0">
+            <a href="../../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- SIGNUP -->
+<section class="max-w-lg mx-auto px-6 py-14">
+
+    <!-- COMPONENT 1 -->
+    <div class="bg-[#D8C3A5] text-[#6B2635] p-4 rounded-xl text-center mb-6">
+        🌸 Join the Yarn & Petals family!
+    </div>
+
+    <!-- COMPONENT 2: CARD -->
+    <div class="bg-white shadow-xl rounded-2xl p-8">
+
+        <h1 class="text-3xl font-bold text-[#6B2635] text-center">
+            Create Account
+        </h1>
+
+        <p class="text-center text-gray-500 mt-2">
+            Start your handmade journey.
+        </p>
+
+        <form onsubmit="return validateSignup()" class="mt-7">
+
+            <!-- COMPONENT 3 -->
+            <label class="font-semibold">
+                Full Name
+            </label>
+
+            <input
+                id="name"
+                type="text"
+                required
+                class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+                placeholder="Enter your name">
+
+            <!-- COMPONENT 4 -->
+            <label class="font-semibold">
+                Email
+            </label>
+
+            <input
+                id="email"
+                type="email"
+                required
+                class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+                placeholder="your@email.com">
+
+            <!-- COMPONENT 5 -->
+            <label class="font-semibold">
+                Password
+            </label>
+
+            <input
+                id="password"
+                type="password"
+                minlength="6"
+                required
+                class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+                placeholder="Minimum 6 characters">
+
+            <label class="font-semibold">
+                Confirm Password
+            </label>
+
+            <input
+                id="confirmPassword"
+                type="password"
+                required
+                class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-6"
+                placeholder="Confirm password">
+
+            <button
+                type="submit"
+                class="w-full bg-[#6B2635] text-white py-3 rounded-full">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="text-center mt-6">
+            Already have an account?
+            <a href="signin.html"
+               class="text-[#6B2635] font-bold">
+                Sign in.
+            </a>
+        </p>
+
+    </div>
+
+    <!-- EXTRA COMPONENT -->
+    <div class="bg-[#F3D6D8] rounded-xl p-5 text-center mt-6">
+        🔒 Your information is kept secure.
+    </div>
+
+</section>
+
+<footer class="bg-[#6B2635] text-white text-center py-6">
+    © 2026 Yarn & Petals. All Rights Reserved.
+</footer>
+
+<script>
+function validateSignup() {
+
+    let password = document.getElementById("password").value;
+    let confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+
+    alert("Account created successfully!");
+    return false;
+}
+</script>
+
+</body>
+</html>

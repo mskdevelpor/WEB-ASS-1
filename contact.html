@@ -1,0 +1,428 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarn & Petals | Contact</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#FFF9F3]">
+
+<!-- NAVBAR -->
+<nav class="bg-[#6B2635] text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+
+        <a href="../../index.html" class="text-2xl font-bold">
+            🧶 Yarn & Petals
+        </a>
+
+        <div class="flex flex-wrap gap-5 mt-3 md:mt-0">
+            <a href="../../index.html" class="hover:text-[#F3D6D8]">Home</a>
+            <a href="about.html" class="hover:text-[#F3D6D8]">About</a>
+            <a href="contact.html" class="text-[#F3D6D8] font-semibold">Contact</a>
+
+            <a href="signup.html"
+               class="bg-[#F3D6D8] text-[#6B2635] px-4 py-2 rounded-full hover:bg-[#D8C3A5]">
+                Sign Up
+            </a>
+
+            <a href="signin.html"
+               class="border border-[#F3D6D8] px-4 py-2 rounded-full hover:bg-[#F3D6D8] hover:text-[#6B2635]">
+                Sign In
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- HEADER -->
+<section class="bg-[#F3D6D8] text-center py-16">
+
+    <p class="text-[#6B2635] font-semibold tracking-widest">
+        GET IN TOUCH
+    </p>
+
+    <h1 class="text-4xl md:text-5xl font-bold text-[#6B2635] mt-2">
+        Contact Us
+    </h1>
+
+    <p class="mt-4 text-gray-700">
+        We'd love to hear from you.
+    </p>
+
+</section>
+
+
+<!-- COMPONENT 1: ALERT -->
+<div class="max-w-5xl mx-auto px-6 mt-8">
+
+    <div class="p-4 text-[#6B2635] bg-[#D8C3A5] rounded-lg">
+        🌸 Have a question about our handmade collection?
+        Send us a message!
+    </div>
+
+</div>
+
+
+<!-- COMPONENT 2: CONTACT CARDS -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Email -->
+        <div class="bg-white shadow p-7 rounded-2xl text-center">
+            <div class="text-4xl">📧</div>
+
+            <h3 class="font-bold text-xl text-[#6B2635] mt-3">
+                Email
+            </h3>
+
+            <p class="mt-2">
+                hello@yarnandpetals.com
+            </p>
+        </div>
+
+
+        <!-- Phone -->
+        <div class="bg-white shadow p-7 rounded-2xl text-center">
+            <div class="text-4xl">📞</div>
+
+            <h3 class="font-bold text-xl text-[#6B2635] mt-3">
+                Phone
+            </h3>
+
+            <p class="mt-2">
+                +92 300 1234567
+            </p>
+        </div>
+
+
+        <!-- Location -->
+        <div class="bg-white shadow p-7 rounded-2xl text-center">
+            <div class="text-4xl">📍</div>
+
+            <h3 class="font-bold text-xl text-[#6B2635] mt-3">
+                Location
+            </h3>
+
+            <p class="mt-2">
+                Lahore, Pakistan
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COMPONENT 3: FORMSPREE CONTACT FORM -->
+<section class="max-w-2xl mx-auto px-6 py-8">
+
+    <!-- YOUR FORMSPREE LINK IS CONNECTED HERE -->
+    <form
+        action="https://formspree.io/f/maennzgl"
+        method="POST"
+        class="bg-white shadow-xl rounded-2xl p-8">
+
+        <h2 class="text-3xl font-bold text-[#6B2635] mb-2">
+            Send Us a Message
+        </h2>
+
+        <p class="text-gray-600 mb-7">
+            Fill in the form below and we will receive your message.
+        </p>
+
+
+        <!-- NAME -->
+        <label
+            for="name"
+            class="font-semibold">
+            Name
+        </label>
+
+        <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+            placeholder="Your name">
+
+
+        <!-- EMAIL -->
+        <label
+            for="email"
+            class="font-semibold">
+            Email
+        </label>
+
+        <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+            placeholder="your@email.com">
+
+
+        <!-- SUBJECT -->
+        <label
+            for="subject"
+            class="font-semibold">
+            Subject
+        </label>
+
+        <input
+            id="subject"
+            type="text"
+            name="subject"
+            required
+            class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+            placeholder="Subject">
+
+
+        <!-- MESSAGE -->
+        <label
+            for="message"
+            class="font-semibold">
+            Message
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+            rows="5"
+            class="w-full border border-[#D8C3A5] rounded-lg p-3 mt-2 mb-5"
+            placeholder="Write your message"></textarea>
+
+
+        <!-- SUBMIT -->
+        <button
+            type="submit"
+            class="w-full bg-[#6B2635] text-white py-3 rounded-full hover:bg-[#4A1B27] transition">
+            Send Message 🌸
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- COMPONENT 4: FAQ -->
+<section class="max-w-4xl mx-auto px-6 py-10">
+
+    <h2 class="text-3xl font-bold text-[#6B2635] mb-6">
+        Contact FAQ
+    </h2>
+
+    <div id="accordion-open" data-accordion="open">
+
+        <!-- FAQ 1 -->
+        <h2 id="accordion-open-heading-1">
+
+            <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium bg-[#F3D6D8] text-[#6B2635]"
+                data-accordion-target="#accordion-open-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-open-body-1">
+
+                <span>
+                    How can I contact you?
+                </span>
+
+                <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6">
+
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"/>
+
+                </svg>
+
+            </button>
+
+        </h2>
+
+
+        <div
+            id="accordion-open-body-1"
+            aria-labelledby="accordion-open-heading-1">
+
+            <div class="p-5 bg-white border border-[#D8C3A5]">
+
+                <p class="text-gray-600">
+                    You can contact us through email, phone or this form.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 2 -->
+        <h2 id="accordion-open-heading-2">
+
+            <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium bg-[#F3D6D8] text-[#6B2635] border-t border-white"
+                data-accordion-target="#accordion-open-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-open-body-2">
+
+                <span>
+                    Are your products handmade?
+                </span>
+
+                <svg
+                    data-accordion-icon
+                    class="w-3 h-3 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6">
+
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"/>
+
+                </svg>
+
+            </button>
+
+        </h2>
+
+
+        <div
+            id="accordion-open-body-2"
+            class="hidden"
+            aria-labelledby="accordion-open-heading-2">
+
+            <div class="p-5 bg-white border border-[#D8C3A5]">
+
+                <p class="text-gray-600">
+                    Yes, our crochet flowers and yarn creations
+                    are handmade with care.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 3 -->
+        <h2 id="accordion-open-heading-3">
+
+            <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium bg-[#F3D6D8] text-[#6B2635] border-t border-white"
+                data-accordion-target="#accordion-open-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-open-body-3">
+
+                <span>
+                    Can I order handmade gifts?
+                </span>
+
+                <svg
+                    data-accordion-icon
+                    class="w-3 h-3 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6">
+
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"/>
+
+                </svg>
+
+            </button>
+
+        </h2>
+
+
+        <div
+            id="accordion-open-body-3"
+            class="hidden"
+            aria-labelledby="accordion-open-heading-3">
+
+            <div class="p-5 bg-white border border-[#D8C3A5]">
+
+                <p class="text-gray-600">
+                    Yes, our handmade collection is perfect
+                    for gifts and special occasions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COMPONENT 5: CTA -->
+<section class="bg-[#6B2635] text-white text-center py-12">
+
+    <h2 class="text-3xl font-bold">
+        Ready to Explore?
+    </h2>
+
+    <p class="mt-3">
+        Discover our handmade collection.
+    </p>
+
+    <a
+        href="signup.html"
+        class="inline-block bg-[#F3D6D8] text-[#6B2635] px-7 py-3 rounded-full mt-5 font-bold hover:bg-[#D8C3A5]">
+
+        Create Account
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-[#6B2635] text-white text-center py-6 border-t border-[#F3D6D8]">
+
+    © 2026 Yarn & Petals. All Rights Reserved.
+
+</footer>
+
+
+<!-- Flowbite JS -->
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js">
+</script>
+
+</body>
+</html>
